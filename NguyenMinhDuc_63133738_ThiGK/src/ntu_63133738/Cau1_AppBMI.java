@@ -10,6 +10,8 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Cau1_AppBMI extends JFrame {
 
@@ -96,6 +98,47 @@ public class Cau1_AppBMI extends JFrame {
 		panel_1.add(txtKetQua);
 		
 		JButton btnTinhBMI = new JButton("Tính BMI");
+		btnTinhBMI.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				double cc = Double.parseDouble(txtChieuCao.getText());
+				double cn = Double.parseDouble(txtCanNang.getText());
+				double bmi = cn/(cc * cc);
+				
+				String kq = String.format("%.2f", bmi);
+				txtKetQua.setText(kq);
+				
+				if(bmi < 18.5)
+				{
+					txtKetQua.setOpaque(true);
+					txtKetQua.setBackground(new Color(128, 255, 255));
+				}
+				else 
+					if(bmi <= 24.9)
+					{
+						txtKetQua.setOpaque(true);
+						txtKetQua.setBackground(new Color(128, 255, 128));
+					}
+					else 
+						if(bmi <= 29.9)
+						{
+							txtKetQua.setOpaque(true);
+							txtKetQua.setBackground(new Color(255, 255, 128));
+						}
+						else 
+							if(bmi <= 34.9)
+							{
+								txtKetQua.setOpaque(true);
+								txtKetQua.setBackground(new Color(255, 128, 0));
+							}
+							else 
+								if(bmi >= 35)
+								{
+									txtKetQua.setOpaque(true);
+									txtKetQua.setBackground(new Color(255, 0, 0));
+								}
+
+			}
+		});
 		btnTinhBMI.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnTinhBMI.setBounds(227, 204, 130, 43);
 		panel_1.add(btnTinhBMI);
