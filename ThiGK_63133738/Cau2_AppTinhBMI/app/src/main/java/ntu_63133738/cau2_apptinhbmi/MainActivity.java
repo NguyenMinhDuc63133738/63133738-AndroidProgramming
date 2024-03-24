@@ -37,49 +37,59 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 double chieuCao = Double.parseDouble(etChieuCao.getText().toString());
                 double canNang = Double.parseDouble(etCanNang.getText().toString());
-                chiso = Math.round((canNang/Math.pow(chieuCao, 2))*10.0)/10.0;
+                chiso = canNang/Math.pow(chieuCao, 2);
                 if (rbNam.isChecked()) {
                     if(chiso < 18.5){
-                        txtChiSo.setText(String.valueOf(chiso));
+                        String chisoFormatted = String.format("%.2f", chiso);
+                        txtChiSo.setText(chisoFormatted);
                         txtNhanXet.setText("Bạn cần bổ sung thêm dinh dưỡng");
                     }
                     if(chiso >= 18.5 && chiso <= 24.9){
-                        txtChiSo.setText(String.valueOf(chiso));
+                        String chisoFormatted = String.format("%.2f", chiso);
+                        txtChiSo.setText(chisoFormatted);
                         txtNhanXet.setText("Bạn có chỉ số BMI bình thường");
                     }
                     if(chiso >= 25 && chiso <= 29.9){
-                        txtChiSo.setText(String.valueOf(chiso));
+                        String chisoFormatted = String.format("%.2f", chiso);
+                        txtChiSo.setText(chisoFormatted);
                         txtNhanXet.setText("Bạn có chỉ số BMI mức độ thừa cân");
                     }
                     if(chiso >= 30 && chiso <= 34.9){
-                        txtChiSo.setText(String.valueOf(chiso));
+                        String chisoFormatted = String.format("%.2f", chiso);
+                        txtChiSo.setText(chisoFormatted);
                         txtNhanXet.setText("Bạn có chỉ số BMI mức độ béo phì, cần điều chỉnh chế độ dinh dưỡng");
                     }
                     if(chiso >= 35 ){
-                        txtChiSo.setText(String.valueOf(chiso));
+                        String chisoFormatted = String.format("%.2f", chiso);
+                        txtChiSo.setText(chisoFormatted);
                         txtNhanXet.setText("Bạn có chỉ số BMI mức độ béo phì nguy hiểm, đây là mức độ nguy hiểm, cần điều chỉnh chế độ dinh dưỡng phối hơp luyện tập");
                     }
                 }
                 else if (rbNU.isChecked())
                 {
                     if(chiso < 18.5){
-                        txtChiSo.setText(String.valueOf(chiso));
+                        String chisoFormatted = String.format("%.2f", chiso);
+                        txtChiSo.setText(chisoFormatted);
                         txtNhanXet.setText("Bạn cần bổ sung thêm dinh dưỡng");
                     }
                     if(chiso >= 18.5 && chiso <= 24.9){
-                        txtChiSo.setText(String.valueOf(chiso));
+                        String chisoFormatted = String.format("%.2f", chiso);
+                        txtChiSo.setText(chisoFormatted);
                         txtNhanXet.setText("Bạn có chỉ số BMI bình thường");
                     }
                     if(chiso >= 25 && chiso <= 29.9){
-                        txtChiSo.setText(String.valueOf(chiso));
+                        String chisoFormatted = String.format("%.2f", chiso);
+                        txtChiSo.setText(chisoFormatted);
                         txtNhanXet.setText("Bạn có chỉ số BMI mức độ thừa cân");
                     }
                     if(chiso >= 30 && chiso <= 34.9){
-                        txtChiSo.setText(String.valueOf(chiso));
+                        String chisoFormatted = String.format("%.2f", chiso);
+                        txtChiSo.setText(chisoFormatted);
                         txtNhanXet.setText("Bạn có chỉ số BMI mức độ béo phì, cần điều chỉnh chế độ dinh dưỡng");
                     }
                     if(chiso >= 35 ){
-                        txtChiSo.setText(String.valueOf(chiso));
+                        String chisoFormatted = String.format("%.2f", chiso);
+                        txtChiSo.setText(chisoFormatted);
                         txtNhanXet.setText("Bạn có chỉ số BMI mức độ béo phì nguy hiểm, đây là mức độ nguy hiểm, cần điều chỉnh chế độ dinh dưỡng phối hơp luyện tập");
                     }
                 }
