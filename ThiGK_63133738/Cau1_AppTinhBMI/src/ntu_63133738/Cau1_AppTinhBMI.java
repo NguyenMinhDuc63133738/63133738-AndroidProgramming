@@ -101,20 +101,23 @@ public class Cau1_AppTinhBMI extends JFrame {
         panel_1.add(txtKetQua);
 
         
-        JButton btnNewButton = new JButton("New button");
-        btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        btnNewButton.setBounds(193, 238, 85, 21);
-        panel_1.add(btnNewButton);
+        JButton btnTinhBMI = new JButton("Tính BMI");
+        btnTinhBMI.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        btnTinhBMI.setBounds(227, 204, 130, 43);
+        panel_1.add(btnTinhBMI);
+
         
-        JButton btnNewButton_1 = new JButton("New button");
-        btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        btnNewButton_1.setBounds(296, 238, 85, 21);
-        panel_1.add(btnNewButton_1);
+        JButton btnXoa = new JButton("Xóa");
+        btnXoa.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        btnXoa.setBounds(380, 204, 85, 43);
+        panel_1.add(btnXoa);
+
         
-        JButton btnNewButton_2 = new JButton("New button");
-        btnNewButton_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        btnNewButton_2.setBounds(419, 238, 85, 21);
-        panel_1.add(btnNewButton_2);
+        JButton btnThoat = new JButton("Thoát");
+        btnThoat.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        btnThoat.setBounds(475, 204, 85, 43);
+        panel_1.add(btnThoat);
+
         
         JPanel panel_2 = new JPanel();
         panel_2.setBackground(new Color(128, 255, 255));
@@ -122,11 +125,15 @@ public class Cau1_AppTinhBMI extends JFrame {
         contentPane.add(panel_2);
         panel_2.setLayout(null);
         
-        JLabel lblNewLabel_2 = new JLabel("New label");
+        JLabel lblNewLabel_2 = new JLabel("<18.5 ");
         lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        lblNewLabel_2.setBounds(10, 24, 78, 37);
+        lblNewLabel_2.setBounds(24, 10, 55, 20);
         panel_2.add(lblNewLabel_2);
-
+        
+        JLabel lblNewLabel_3 = new JLabel("Thiếu cân");
+        lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        lblNewLabel_3.setBounds(20, 41, 86, 32);
+        panel_2.add(lblNewLabel_3);
         
         JPanel panel_2_1 = new JPanel();
         panel_2_1.setBackground(new Color(128, 255, 128));
@@ -134,12 +141,15 @@ public class Cau1_AppTinhBMI extends JFrame {
         contentPane.add(panel_2_1);
         panel_2_1.setLayout(null);
         
-        JLabel lblNewLabel_2_1 = new JLabel("New label");
+        JLabel lblNewLabel_2_1 = new JLabel("18.5 - 24.9");
         lblNewLabel_2_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        lblNewLabel_2_1.setBounds(10, 24, 78, 37);
+        lblNewLabel_2_1.setBounds(20, 10, 86, 20);
         panel_2_1.add(lblNewLabel_2_1);
         
-
+        JLabel lblNewLabel_3_1 = new JLabel("Cân đối");
+        lblNewLabel_3_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        lblNewLabel_3_1.setBounds(30, 40, 62, 32);
+        panel_2_1.add(lblNewLabel_3_1);
         
         JPanel panel_2_2 = new JPanel();
         panel_2_2.setBackground(new Color(255, 255, 128));
@@ -147,11 +157,15 @@ public class Cau1_AppTinhBMI extends JFrame {
         contentPane.add(panel_2_2);
         panel_2_2.setLayout(null);
         
-        JLabel lblNewLabel_2_2 = new JLabel("New label");
+        JLabel lblNewLabel_2_2 = new JLabel("25 - 29.9");
         lblNewLabel_2_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        lblNewLabel_2_2.setBounds(10, 22, 78, 37);
+        lblNewLabel_2_2.setBounds(20, 10, 75, 25);
         panel_2_2.add(lblNewLabel_2_2);
-
+        
+        JLabel lblNewLabel_3_2 = new JLabel("Thừa cân");
+        lblNewLabel_3_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        lblNewLabel_3_2.setBounds(20, 45, 77, 32);
+        panel_2_2.add(lblNewLabel_3_2);
         
         JPanel panel_2_3 = new JPanel();
         panel_2_3.setBackground(new Color(255, 128, 0));
@@ -159,11 +173,15 @@ public class Cau1_AppTinhBMI extends JFrame {
         contentPane.add(panel_2_3);
         panel_2_3.setLayout(null);
         
-        JLabel lblNewLabel_2_3 = new JLabel("New label");
+        JLabel lblNewLabel_2_3 = new JLabel("30 - 34.9");
         lblNewLabel_2_3.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        lblNewLabel_2_3.setBounds(21, 22, 78, 37);
+        lblNewLabel_2_3.setBounds(20, 10, 69, 26);
         panel_2_3.add(lblNewLabel_2_3);
-
+        
+        JLabel lblNewLabel_3_3 = new JLabel("Béo phì");
+        lblNewLabel_3_3.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        lblNewLabel_3_3.setBounds(20, 42, 69, 32);
+        panel_2_3.add(lblNewLabel_3_3);
         
         JPanel panel_2_4 = new JPanel();
         panel_2_4.setBackground(new Color(255, 0, 0));
@@ -171,14 +189,17 @@ public class Cau1_AppTinhBMI extends JFrame {
         contentPane.add(panel_2_4);
         panel_2_4.setLayout(null);
         
-        JLabel lblNewLabel_2_4 = new JLabel("New label");
+        JLabel lblNewLabel_2_4 = new JLabel("35<");
         lblNewLabel_2_4.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        lblNewLabel_2_4.setBounds(10, 24, 78, 37);
+        lblNewLabel_2_4.setBounds(32, 10, 45, 27);
         panel_2_4.add(lblNewLabel_2_4);
-
-
-
-
-
-	}
+        
+        JLabel lblNewLabel_3_4 = new JLabel("<html>Béo phì<br>nguy hiểm</html>");
+        lblNewLabel_3_4.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        lblNewLabel_3_4.setBounds(20, 37, 86, 40);
+        panel_2_4.add(lblNewLabel_3_4);
+        
+        
+    }
 }
+
