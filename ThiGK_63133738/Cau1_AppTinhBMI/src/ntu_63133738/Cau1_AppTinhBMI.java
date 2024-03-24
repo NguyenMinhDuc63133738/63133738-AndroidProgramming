@@ -11,6 +11,8 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Cau1_AppTinhBMI extends JFrame {
 
@@ -102,18 +104,30 @@ public class Cau1_AppTinhBMI extends JFrame {
 
         
         JButton btnTinhBMI = new JButton("Tính BMI");
+        btnTinhBMI.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        	}
+        });
         btnTinhBMI.setFont(new Font("Tahoma", Font.PLAIN, 16));
         btnTinhBMI.setBounds(227, 204, 130, 43);
         panel_1.add(btnTinhBMI);
 
         
         JButton btnXoa = new JButton("Xóa");
+        btnXoa.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        	}
+        });
         btnXoa.setFont(new Font("Tahoma", Font.PLAIN, 16));
         btnXoa.setBounds(380, 204, 85, 43);
         panel_1.add(btnXoa);
 
         
         JButton btnThoat = new JButton("Thoát");
+        btnThoat.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        	}
+        });
         btnThoat.setFont(new Font("Tahoma", Font.PLAIN, 16));
         btnThoat.setBounds(475, 204, 85, 43);
         panel_1.add(btnThoat);
