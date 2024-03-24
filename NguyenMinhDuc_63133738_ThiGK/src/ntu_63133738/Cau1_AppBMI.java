@@ -159,6 +159,11 @@ public class Cau1_AppBMI extends JFrame {
 		panel_1.add(btnXoa);
 		
 		JButton btnThoat = new JButton("Thoát");
+		btnThoat.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
 		btnThoat.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnThoat.setBounds(475, 204, 85, 43);
 		panel_1.add(btnThoat);
