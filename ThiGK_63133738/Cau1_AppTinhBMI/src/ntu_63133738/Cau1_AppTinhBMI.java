@@ -170,6 +170,7 @@ public class Cau1_AppTinhBMI extends JFrame {
         JButton btnThoat = new JButton("Thoát");
         btnThoat.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
+        		System.exit(0);
         		
         	}
         });
