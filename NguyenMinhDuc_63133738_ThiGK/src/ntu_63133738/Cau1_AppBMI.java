@@ -121,6 +121,11 @@ public class Cau1_AppBMI extends JFrame {
 		lblNewLabel_2.setBounds(24, 10, 55, 20);
 		panel_2.add(lblNewLabel_2);
 		
+		JLabel lblNewLabel_3 = new JLabel("Thiếu cân");
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel_3.setBounds(20, 41, 86, 32);
+		panel_2.add(lblNewLabel_3);
+		
 		JPanel panel_2_1 = new JPanel();
 		panel_2_1.setBackground(new Color(128, 255, 128));
 		panel_2_1.setBounds(113, 446, 116, 107);
@@ -131,6 +136,11 @@ public class Cau1_AppBMI extends JFrame {
 		lblNewLabel_2_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblNewLabel_2_1.setBounds(20, 10, 86, 20);
 		panel_2_1.add(lblNewLabel_2_1);
+		
+		JLabel lblNewLabel_3_1 = new JLabel("Cân đối");
+		lblNewLabel_3_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel_3_1.setBounds(30, 40, 62, 32);
+		panel_2_1.add(lblNewLabel_3_1);
 		
 		JPanel panel_2_2 = new JPanel();
 		panel_2_2.setBackground(new Color(255, 255, 128));
@@ -143,6 +153,11 @@ public class Cau1_AppBMI extends JFrame {
 		lblNewLabel_2_2.setBounds(20, 10, 75, 25);
 		panel_2_2.add(lblNewLabel_2_2);
 		
+		JLabel lblNewLabel_3_2 = new JLabel("Thừa cân");
+		lblNewLabel_3_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel_3_2.setBounds(20, 45, 77, 32);
+		panel_2_2.add(lblNewLabel_3_2);
+		
 		JPanel panel_2_3 = new JPanel();
 		panel_2_3.setBackground(new Color(255, 128, 0));
 		panel_2_3.setBounds(346, 446, 124, 107);
@@ -154,6 +169,11 @@ public class Cau1_AppBMI extends JFrame {
 		lblNewLabel_2_3.setBounds(20, 10, 69, 26);
 		panel_2_3.add(lblNewLabel_2_3);
 		
+		JLabel lblNewLabel_3_3 = new JLabel("Béo phì");
+		lblNewLabel_3_3.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel_3_3.setBounds(20, 42, 69, 32);
+		panel_2_3.add(lblNewLabel_3_3);
+		
 		JPanel panel_2_4 = new JPanel();
 		panel_2_4.setBackground(new Color(255, 0, 0));
 		panel_2_4.setBounds(470, 446, 116, 107);
@@ -164,6 +184,11 @@ public class Cau1_AppBMI extends JFrame {
 		lblNewLabel_2_4.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblNewLabel_2_4.setBounds(32, 10, 45, 27);
 		panel_2_4.add(lblNewLabel_2_4);
+		
+		JLabel lblNewLabel_3_4 = new JLabel("<html>Béo phì<br>nguy hiểm</html>");
+		lblNewLabel_3_4.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel_3_4.setBounds(20, 37, 86, 40);
+		panel_2_4.add(lblNewLabel_3_4);
 		
 		
 	}
