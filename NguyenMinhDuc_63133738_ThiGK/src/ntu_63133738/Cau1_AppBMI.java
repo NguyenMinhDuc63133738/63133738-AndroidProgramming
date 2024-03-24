@@ -144,6 +144,16 @@ public class Cau1_AppBMI extends JFrame {
 		panel_1.add(btnTinhBMI);
 		
 		JButton btnXoa = new JButton("Xóa");
+		btnXoa.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				txtChieuCao.setText("");
+				txtCanNang.setText("");
+				txtKetQua.setText("");
+				txtKetQua.setOpaque(true);
+				txtKetQua.setBackground(Color.white);
+
+			}
+		});
 		btnXoa.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		btnXoa.setBounds(380, 204, 85, 43);
 		panel_1.add(btnXoa);
