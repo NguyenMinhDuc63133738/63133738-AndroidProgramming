@@ -89,6 +89,11 @@
         android:layout_gravity="center"
         android:layout_marginTop="50dp">
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chỉ số BMI của bạn là"
+            android:textSize="25dp"/>
+        <TextView
             android:id="@+id/txt_ketqua"
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
