@@ -16,9 +16,9 @@ public class Cau1_AppTinhBMI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField txtChieuCao;
+	private JTextField txtCanNang;
+	private JTextField txtKetQua;
 
 	/**
 	 * Launch the application.
@@ -54,10 +54,11 @@ public class Cau1_AppTinhBMI extends JFrame {
         contentPane.add(panel);
         panel.setLayout(null);
         
-        JLabel lblNewLabel = new JLabel("New label");
-        lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        lblNewLabel.setBounds(147, 34, 210, 64);
+        JLabel lblNewLabel = new JLabel("Tính BMI của bạn tại đây");
+        lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 25));
+        lblNewLabel.setBounds(149, 34, 288, 60);
         panel.add(lblNewLabel);
+
         
         JPanel panel_1 = new JPanel();
         panel_1.setBackground(new Color(255, 213, 234));
@@ -65,38 +66,40 @@ public class Cau1_AppTinhBMI extends JFrame {
         contentPane.add(panel_1);
         panel_1.setLayout(null);
         
-        JLabel lblNewLabel_1 = new JLabel("New label");
+        JLabel lblNewLabel_1 = new JLabel("Chiều cao(m):");
         lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        lblNewLabel_1.setBounds(10, 24, 110, 36);
+        lblNewLabel_1.setBounds(10, 26, 112, 30);
         panel_1.add(lblNewLabel_1);
+
         
-        JLabel lblNewLabel_1_1 = new JLabel("New label");
+        JLabel lblNewLabel_1_1 = new JLabel("Cân nặng(kg)");
         lblNewLabel_1_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        lblNewLabel_1_1.setBounds(10, 99, 110, 36);
+        lblNewLabel_1_1.setBounds(10, 85, 112, 30);
         panel_1.add(lblNewLabel_1_1);
+
         
-        JLabel lblNewLabel_1_2 = new JLabel("New label");
+        JLabel lblNewLabel_1_2 = new JLabel("Chỉ số BMI");
         lblNewLabel_1_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        lblNewLabel_1_2.setBounds(10, 172, 110, 36);
+        lblNewLabel_1_2.setBounds(10, 133, 112, 30);
         panel_1.add(lblNewLabel_1_2);
+
         
-        textField = new JTextField();
-        textField.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        textField.setBounds(135, 32, 385, 25);
-        panel_1.add(textField);
-        textField.setColumns(10);
+        txtChieuCao = new JTextField();
+        txtChieuCao.setBounds(207, 29, 353, 30);
+        panel_1.add(txtChieuCao);
+        txtChieuCao.setColumns(10);
         
-        textField_1 = new JTextField();
-        textField_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        textField_1.setColumns(10);
-        textField_1.setBounds(135, 110, 385, 25);
-        panel_1.add(textField_1);
+        txtCanNang = new JTextField();
+        txtCanNang.setColumns(10);
+        txtCanNang.setBounds(207, 85, 353, 30);
+        panel_1.add(txtCanNang);
         
-        textField_2 = new JTextField();
-        textField_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        textField_2.setColumns(10);
-        textField_2.setBounds(135, 180, 385, 25);
-        panel_1.add(textField_2);
+        txtKetQua = new JTextField();
+        txtKetQua.setEditable(false);
+        txtKetQua.setColumns(10);
+        txtKetQua.setBounds(207, 136, 353, 30);
+        panel_1.add(txtKetQua);
+
         
         JButton btnNewButton = new JButton("New button");
         btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 16));
