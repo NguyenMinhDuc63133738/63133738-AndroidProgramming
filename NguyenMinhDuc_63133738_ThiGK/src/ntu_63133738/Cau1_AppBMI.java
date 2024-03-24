@@ -53,9 +53,9 @@ public class Cau1_AppBMI extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("New label");
+		JLabel lblNewLabel = new JLabel("Tính BMI của bạn tại đây");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		lblNewLabel.setBounds(193, 32, 155, 60);
+		lblNewLabel.setBounds(149, 34, 288, 60);
 		panel.add(lblNewLabel);
 		
 		JPanel panel_1 = new JPanel();
@@ -64,19 +64,19 @@ public class Cau1_AppBMI extends JFrame {
 		contentPane.add(panel_1);
 		panel_1.setLayout(null);
 		
-		JLabel lblNewLabel_1 = new JLabel("New label");
+		JLabel lblNewLabel_1 = new JLabel("Chiều cao(m):");
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblNewLabel_1.setBounds(10, 26, 82, 30);
+		lblNewLabel_1.setBounds(10, 26, 112, 30);
 		panel_1.add(lblNewLabel_1);
 		
-		JLabel lblNewLabel_1_1 = new JLabel("New label");
+		JLabel lblNewLabel_1_1 = new JLabel("Cân nặng(kg)");
 		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblNewLabel_1_1.setBounds(10, 85, 82, 30);
+		lblNewLabel_1_1.setBounds(10, 85, 112, 30);
 		panel_1.add(lblNewLabel_1_1);
 		
-		JLabel lblNewLabel_1_2 = new JLabel("New label");
+		JLabel lblNewLabel_1_2 = new JLabel("Chỉ số BMI");
 		lblNewLabel_1_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblNewLabel_1_2.setBounds(10, 133, 82, 30);
+		lblNewLabel_1_2.setBounds(10, 133, 112, 30);
 		panel_1.add(lblNewLabel_1_2);
 		
 		textField = new JTextField();
@@ -94,17 +94,20 @@ public class Cau1_AppBMI extends JFrame {
 		textField_2.setBounds(207, 136, 353, 30);
 		panel_1.add(textField_2);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setBounds(207, 215, 85, 21);
+		JButton btnNewButton = new JButton("Tính BMI");
+		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnNewButton.setBounds(227, 204, 130, 43);
 		panel_1.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("New button");
-		btnNewButton_1.setBounds(331, 215, 85, 21);
-		panel_1.add(btnNewButton_1);
+		JButton btnXa = new JButton("Xóa");
+		btnXa.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnXa.setBounds(380, 204, 85, 43);
+		panel_1.add(btnXa);
 		
-		JButton btnNewButton_2 = new JButton("New button");
-		btnNewButton_2.setBounds(475, 215, 85, 21);
-		panel_1.add(btnNewButton_2);
+		JButton btnThot = new JButton("Thoát");
+		btnThot.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnThot.setBounds(475, 204, 85, 43);
+		panel_1.add(btnThot);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setBackground(new Color(128, 255, 255));
