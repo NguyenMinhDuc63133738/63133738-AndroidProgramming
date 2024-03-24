@@ -6,6 +6,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import java.awt.Color;
 
 public class Cau1_AppTinhBMI extends JFrame {
 
@@ -39,6 +40,57 @@ public class Cau1_AppTinhBMI extends JFrame {
 
         setContentPane(contentPane);
         contentPane.setLayout(null);
+        
+        JPanel panel = new JPanel();
+        panel.setBackground(new Color(255, 128, 192));
+        panel.setBounds(0, 0, 586, 152);
+        contentPane.add(panel);
+        panel.setLayout(null);
+        
+        JPanel panel_1 = new JPanel();
+        panel_1.setBackground(new Color(255, 213, 234));
+        panel_1.setBounds(0, 152, 586, 294);
+        contentPane.add(panel_1);
+        panel_1.setLayout(null);
+        
+        JPanel panel_2 = new JPanel();
+        panel_2.setBackground(new Color(128, 255, 255));
+        panel_2.setBounds(0, 446, 116, 107);
+        contentPane.add(panel_2);
+        panel_2.setLayout(null);
+
+        
+        JPanel panel_2_1 = new JPanel();
+        panel_2_1.setBackground(new Color(128, 255, 128));
+        panel_2_1.setBounds(113, 446, 116, 107);
+        contentPane.add(panel_2_1);
+        panel_2_1.setLayout(null);
+        
+
+        
+        JPanel panel_2_2 = new JPanel();
+        panel_2_2.setBackground(new Color(255, 255, 128));
+        panel_2_2.setBounds(229, 446, 116, 107);
+        contentPane.add(panel_2_2);
+        panel_2_2.setLayout(null);
+
+        
+        JPanel panel_2_3 = new JPanel();
+        panel_2_3.setBackground(new Color(255, 128, 0));
+        panel_2_3.setBounds(346, 446, 124, 107);
+        contentPane.add(panel_2_3);
+        panel_2_3.setLayout(null);
+
+        
+        JPanel panel_2_4 = new JPanel();
+        panel_2_4.setBackground(new Color(255, 0, 0));
+        panel_2_4.setBounds(470, 446, 116, 107);
+        contentPane.add(panel_2_4);
+        panel_2_4.setLayout(null);
+
+
+
+
 
 	}
 }
