@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -81,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
                         txtChiSo.setText(String.valueOf(chiso));
                         txtNhanXet.setText("Bạn có chỉ số BMI mức độ béo phì nguy hiểm, đây là mức độ nguy hiểm, cần điều chỉnh chế độ dinh dưỡng phối hơp luyện tập");
                     }
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Vui lòng chọn giới tính!", Toast.LENGTH_LONG).show();
                 }
 
             }
