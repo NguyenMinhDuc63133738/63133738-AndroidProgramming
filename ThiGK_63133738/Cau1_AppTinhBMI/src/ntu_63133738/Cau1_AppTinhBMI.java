@@ -106,6 +106,43 @@ public class Cau1_AppTinhBMI extends JFrame {
         JButton btnTinhBMI = new JButton("Tính BMI");
         btnTinhBMI.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
+        		double cc = Double.parseDouble(txtChieuCao.getText());
+                double cn = Double.parseDouble(txtCanNang.getText());
+                double bmi = cn/(cc * cc);
+                
+                String kq = String.format("%.2f", bmi);
+                txtKetQua.setText(kq);
+                
+                if(bmi < 18.5)
+                {
+                    txtKetQua.setOpaque(true);
+                    txtKetQua.setBackground(new Color(128, 255, 255));
+                }
+                else 
+                    if(bmi <= 24.9)
+                    {
+                        txtKetQua.setOpaque(true);
+                        txtKetQua.setBackground(new Color(128, 255, 128));
+                    }
+                    else 
+                        if(bmi <= 29.9)
+                        {
+                            txtKetQua.setOpaque(true);
+                            txtKetQua.setBackground(new Color(255, 255, 128));
+                        }
+                        else 
+                            if(bmi <= 34.9)
+                            {
+                                txtKetQua.setOpaque(true);
+                                txtKetQua.setBackground(new Color(255, 128, 0));
+                            }
+                            else 
+                                if(bmi >= 35)
+                                {
+                                    txtKetQua.setOpaque(true);
+                                    txtKetQua.setBackground(new Color(255, 0, 0));
+                                }
+
         	}
         });
         btnTinhBMI.setFont(new Font("Tahoma", Font.PLAIN, 16));
@@ -126,6 +163,7 @@ public class Cau1_AppTinhBMI extends JFrame {
         JButton btnThoat = new JButton("Thoát");
         btnThoat.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
+        		
         	}
         });
         btnThoat.setFont(new Font("Tahoma", Font.PLAIN, 16));
