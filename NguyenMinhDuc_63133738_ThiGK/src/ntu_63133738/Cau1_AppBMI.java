@@ -15,9 +15,9 @@ public class Cau1_AppBMI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField txtChieuCao;
+	private JTextField txtCanNang;
+	private JTextField txtKetQua;
 
 	/**
 	 * Launch the application.
@@ -79,35 +79,35 @@ public class Cau1_AppBMI extends JFrame {
 		lblNewLabel_1_2.setBounds(10, 133, 112, 30);
 		panel_1.add(lblNewLabel_1_2);
 		
-		textField = new JTextField();
-		textField.setBounds(207, 29, 353, 30);
-		panel_1.add(textField);
-		textField.setColumns(10);
+		txtChieuCao = new JTextField();
+		txtChieuCao.setBounds(207, 29, 353, 30);
+		panel_1.add(txtChieuCao);
+		txtChieuCao.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(207, 85, 353, 30);
-		panel_1.add(textField_1);
+		txtCanNang = new JTextField();
+		txtCanNang.setColumns(10);
+		txtCanNang.setBounds(207, 85, 353, 30);
+		panel_1.add(txtCanNang);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(207, 136, 353, 30);
-		panel_1.add(textField_2);
+		txtKetQua = new JTextField();
+		txtKetQua.setColumns(10);
+		txtKetQua.setBounds(207, 136, 353, 30);
+		panel_1.add(txtKetQua);
 		
-		JButton btnNewButton = new JButton("Tính BMI");
-		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnNewButton.setBounds(227, 204, 130, 43);
-		panel_1.add(btnNewButton);
+		JButton btnTinhBMI = new JButton("Tính BMI");
+		btnTinhBMI.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnTinhBMI.setBounds(227, 204, 130, 43);
+		panel_1.add(btnTinhBMI);
 		
-		JButton btnXa = new JButton("Xóa");
-		btnXa.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnXa.setBounds(380, 204, 85, 43);
-		panel_1.add(btnXa);
+		JButton btnXoa = new JButton("Xóa");
+		btnXoa.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnXoa.setBounds(380, 204, 85, 43);
+		panel_1.add(btnXoa);
 		
-		JButton btnThot = new JButton("Thoát");
-		btnThot.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnThot.setBounds(475, 204, 85, 43);
-		panel_1.add(btnThot);
+		JButton btnThoat = new JButton("Thoát");
+		btnThoat.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnThoat.setBounds(475, 204, 85, 43);
+		panel_1.add(btnThoat);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setBackground(new Color(128, 255, 255));
