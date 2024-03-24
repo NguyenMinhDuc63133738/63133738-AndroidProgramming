@@ -97,6 +97,7 @@ public class Cau1_AppTinhBMI extends JFrame {
         panel_1.add(txtCanNang);
         
         txtKetQua = new JTextField();
+        txtKetQua.setBackground(new Color(223, 223, 223));
         txtKetQua.setEditable(false);
         txtKetQua.setColumns(10);
         txtKetQua.setBounds(207, 136, 353, 30);
@@ -153,6 +154,12 @@ public class Cau1_AppTinhBMI extends JFrame {
         JButton btnXoa = new JButton("Xóa");
         btnXoa.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
+                    txtChieuCao.setText("");
+                    txtCanNang.setText("");
+                    txtKetQua.setText("");
+                    txtKetQua.setOpaque(true);
+                    txtKetQua.setBackground(new Color(223, 223, 223));
+
         	}
         });
         btnXoa.setFont(new Font("Tahoma", Font.PLAIN, 16));
