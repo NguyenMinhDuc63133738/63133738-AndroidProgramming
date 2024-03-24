@@ -90,6 +90,7 @@ public class Cau1_AppBMI extends JFrame {
 		panel_1.add(txtCanNang);
 		
 		txtKetQua = new JTextField();
+		txtKetQua.setEditable(false);
 		txtKetQua.setColumns(10);
 		txtKetQua.setBounds(207, 136, 353, 30);
 		panel_1.add(txtKetQua);
@@ -115,8 +116,9 @@ public class Cau1_AppBMI extends JFrame {
 		contentPane.add(panel_2);
 		panel_2.setLayout(null);
 		
-		JLabel lblNewLabel_2 = new JLabel("New label");
-		lblNewLabel_2.setBounds(33, 31, 45, 13);
+		JLabel lblNewLabel_2 = new JLabel("<18.5 ");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel_2.setBounds(24, 10, 55, 20);
 		panel_2.add(lblNewLabel_2);
 		
 		JPanel panel_2_1 = new JPanel();
@@ -125,8 +127,9 @@ public class Cau1_AppBMI extends JFrame {
 		contentPane.add(panel_2_1);
 		panel_2_1.setLayout(null);
 		
-		JLabel lblNewLabel_2_1 = new JLabel("New label");
-		lblNewLabel_2_1.setBounds(32, 33, 45, 13);
+		JLabel lblNewLabel_2_1 = new JLabel("18.5 - 24.9");
+		lblNewLabel_2_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel_2_1.setBounds(20, 10, 86, 20);
 		panel_2_1.add(lblNewLabel_2_1);
 		
 		JPanel panel_2_2 = new JPanel();
@@ -135,8 +138,9 @@ public class Cau1_AppBMI extends JFrame {
 		contentPane.add(panel_2_2);
 		panel_2_2.setLayout(null);
 		
-		JLabel lblNewLabel_2_2 = new JLabel("New label");
-		lblNewLabel_2_2.setBounds(38, 34, 45, 13);
+		JLabel lblNewLabel_2_2 = new JLabel("25 - 29.9");
+		lblNewLabel_2_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel_2_2.setBounds(20, 10, 75, 25);
 		panel_2_2.add(lblNewLabel_2_2);
 		
 		JPanel panel_2_3 = new JPanel();
@@ -145,8 +149,9 @@ public class Cau1_AppBMI extends JFrame {
 		contentPane.add(panel_2_3);
 		panel_2_3.setLayout(null);
 		
-		JLabel lblNewLabel_2_3 = new JLabel("New label");
-		lblNewLabel_2_3.setBounds(47, 35, 45, 13);
+		JLabel lblNewLabel_2_3 = new JLabel("30 - 34.9");
+		lblNewLabel_2_3.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel_2_3.setBounds(20, 10, 69, 26);
 		panel_2_3.add(lblNewLabel_2_3);
 		
 		JPanel panel_2_4 = new JPanel();
@@ -155,8 +160,9 @@ public class Cau1_AppBMI extends JFrame {
 		contentPane.add(panel_2_4);
 		panel_2_4.setLayout(null);
 		
-		JLabel lblNewLabel_2_4 = new JLabel("New label");
-		lblNewLabel_2_4.setBounds(41, 33, 45, 13);
+		JLabel lblNewLabel_2_4 = new JLabel("35<");
+		lblNewLabel_2_4.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblNewLabel_2_4.setBounds(32, 10, 45, 27);
 		panel_2_4.add(lblNewLabel_2_4);
 		
 		
