@@ -1,6 +1,10 @@
 package ntu_63133738.cau2_apptinhbmi;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,15 +14,21 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText etChieuCao, etCanNang;
+    RadioButton rbNam, rbNU;
+    Button btnTinhBMI;
+    TextView txtChiSo, txtNhanXet;
+    double chiso;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        etChieuCao = findViewById(R.id.et_chieucao);
+        etCanNang = findViewById(R.id.et_cannang);
+        rbNam = findViewById(R.id.rb_nam);
+        rbNU = findViewById(R.id.rb_nu);
+        btnTinhBMI = findViewById(R.id.btn_tinh);
+        txtChiSo = findViewById(R.id.txt_ketqua);
+        txtNhanXet = findViewById(R.id.txt_nhanxet);
     }
 }
