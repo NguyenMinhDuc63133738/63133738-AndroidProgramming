@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
         HovaTen = findViewById(R.id.txt_hovaten);
         MSSV = findViewById(R.id.txt_mssv);
         Lop = findViewById(R.id.txt_lop);
@@ -46,7 +47,49 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        
-
+        btnMSSV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (rbXacnhan.isChecked()) {
+                    MSSV.setText("63133738");
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Vui lòng chọn xác nhận!", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+        btnLop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (rbXacnhan.isChecked()) {
+                    Lop.setText("63CNTT_2");
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Vui lòng chọn xác nhận!", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+        btnChuyennganh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (rbXacnhan.isChecked()) {
+                    Chuyennganh.setText("Công nghệ thông tin");
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Vui lòng chọn xác nhận!", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+        btnEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (rbXacnhan.isChecked()) {
+                    Email.setText("duc.nm.63cntt@ntu.edu.vn");
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Vui lòng chọn xác nhận!", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 }

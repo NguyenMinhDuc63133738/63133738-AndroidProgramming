@@ -36,7 +36,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:text=""
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/btn_hovaten"
@@ -66,7 +66,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:text=""
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/btn_mssv"
@@ -96,7 +96,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:text=""
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/btn_lop"
@@ -125,7 +125,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:text=""
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/btn_cn"
@@ -155,7 +155,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:text=""
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/btn_email"
