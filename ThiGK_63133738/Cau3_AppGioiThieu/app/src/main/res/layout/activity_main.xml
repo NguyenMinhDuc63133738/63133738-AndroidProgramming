@@ -30,18 +30,48 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/et_chieucao"
+            android:id="@+id/et_Hovaten"
             android:layout_width="193dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:textSize="15dp" />
 
         <Button
-            android:id="@+id/btn_tinh"
+            android:id="@+id/btn_hovaten"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="match_parent"
             android:text="hiện"
             android:textSize="15dp" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_marginLeft="50dp"
+            android:text="MSSV:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_MSSV"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_MSSV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="hiện"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    
 </LinearLayout>
 
