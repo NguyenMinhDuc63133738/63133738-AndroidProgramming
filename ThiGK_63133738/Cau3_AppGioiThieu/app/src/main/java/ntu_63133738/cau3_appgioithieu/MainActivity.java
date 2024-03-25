@@ -18,7 +18,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-
+        HovaTen = findViewById(R.id.et_Hovaten);
+        MSSV = findViewById(R.id.et_Hovaten);
+        Lop = findViewById(R.id.et_Hovaten);
+        Chuyennganh = findViewById(R.id.et_Hovaten);
+        Email = findViewById(R.id.et_Hovaten);
+        btnHovaTen = findViewById(R.id.et_Hovaten);
+        btnMSSV = findViewById(R.id.et_Hovaten);
+        btnLop = findViewById(R.id.et_Hovaten);
 
 
 

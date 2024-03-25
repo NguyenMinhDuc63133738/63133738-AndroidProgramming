@@ -29,12 +29,14 @@
             android:text="Họ tên:"
             android:textSize="20dp" />
 
-        <EditText
-            android:id="@+id/et_Hovaten"
-            android:layout_width="193dp"
+        <TextView
+            android:id="@+id/txt_hovaten"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:textSize="15dp" />
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_hovaten"
@@ -57,12 +59,14 @@
             android:text="MSSV:"
             android:textSize="20dp" />
 
-        <EditText
-            android:id="@+id/et_mssv"
-            android:layout_width="193dp"
+        <TextView
+            android:id="@+id/txt_mssv"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:textSize="15dp" />
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_mssv"
@@ -85,12 +89,14 @@
             android:text="Lớp:"
             android:textSize="20dp" />
 
-        <EditText
-            android:id="@+id/et_lop"
-            android:layout_width="193dp"
+        <TextView
+            android:id="@+id/txt_lop"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:textSize="15dp" />
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_lop"
@@ -106,18 +112,20 @@
         android:layout_marginTop="30dp">
 
         <TextView
-            android:layout_width="92dp"
+            android:layout_width="74dp"
             android:layout_height="62dp"
             android:layout_marginLeft="50dp"
             android:text="Chuyên ngành:"
             android:textSize="20dp" />
 
-        <EditText
-            android:id="@+id/et_cn"
-            android:layout_width="172dp"
+        <TextView
+            android:id="@+id/txt_chuyennganh"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:textSize="15dp" />
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_cn"
@@ -140,12 +148,14 @@
             android:text="Email:"
             android:textSize="20dp" />
 
-        <EditText
-            android:id="@+id/et_email"
-            android:layout_width="193dp"
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:textSize="15dp" />
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btn_email"
